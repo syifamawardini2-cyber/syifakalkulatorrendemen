@@ -8,3 +8,11 @@ import streamlit as st
 code = '''def hello():
     print("Hello, Streamlit!")'''
 st.code(code, language="python"
+import streamlit as st
+
+option = st.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone"),
+)
+
+st.write("You selected:", option)
